@@ -1,7 +1,9 @@
 #!/bin/bash -eux
 
 # JDK and JRE are required for Jenkins
-apt-get install -y openjdk-7-jre openjdk-7-jdk unzip dos2unix
+echo "--------------------------------------------------------------------"
+apt-get install -y apt-get install default-jdk dos2unix
+echo "--------------------------------------------------------------------"
 
 wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add -
 echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources.list.d/jenkins.list

@@ -30,6 +30,18 @@ apt-get -y install screen
 echo "Installing git"
 apt-get -y install git
 
+# install unzip
+echo "Installing unzip"
+apt-get -y install unzip
+
+# install dos2unix
+echo "Installing dos2unix"
+apt-get -y install dos2unix
+
+# install java
+echo "Installing java"
+apt-get -y install default-jdk
+
 # sshd config
 echo "UseDNS no" >> /etc/ssh/sshd_config
 echo "GSSAPIAuthentication no" >> /etc/ssh/sshd_config
